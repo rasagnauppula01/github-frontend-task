@@ -8,7 +8,7 @@ import FollowersPage from './pages/FollowersPage';
 function App() {
   return (
     <Router>
-      <div className="app">
+      <div className="app" id='app'>
         <Routes>
           <Route path="/" element={<SearchPage />} />
           <Route path="/user/:username" element={<UserPage />} />

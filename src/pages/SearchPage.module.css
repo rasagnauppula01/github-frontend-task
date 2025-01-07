@@ -3,7 +3,8 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f5f8fa;
+  /* background-color: #f5f8fa; */
+  background-image: url("../social-2deb6d7d43e7.jpg");
 }
 
 .form {
