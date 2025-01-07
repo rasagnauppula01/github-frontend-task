@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://source.unsplash.com/random/1920x1080/?technology');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00d8ff;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #00d8ff;
+  color: #000000;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  color: #00d8ff;
+  font-size: 20px;
+}
+
+.menu-toggle.open {
+  color: #ff4c4c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    display: none;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
